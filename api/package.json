@@ -1,7 +1,7 @@
 {
   "name": "kitchen-api",
   "version": "1.0.0",
-  "description": "Kitchen API with orders, health, and metrics",
+  "description": "Kitchen API with orders, health, and Prometheus /metrics",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -17,7 +17,8 @@
     "prom-client": "^15.1.0"
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
+    "eslint": "^8.57.1",
+    "globals": "^17.4.0",
     "jest": "^29.7.0",
     "supertest": "^7.0.0"
   }
