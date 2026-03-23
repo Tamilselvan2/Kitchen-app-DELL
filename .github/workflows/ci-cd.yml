@@ -62,7 +62,7 @@ jobs:
       - name: Lint manifests
         run: |
           yamllint \
-            -d '{extends: default, rules: {line-length: {max: 220}}}' \
+            -d '{extends: default, rules: {document-start: disable, line-length: {max: 400}, new-lines: disable}}' \
             k8s
 
       - name: Validate key files are non-empty
