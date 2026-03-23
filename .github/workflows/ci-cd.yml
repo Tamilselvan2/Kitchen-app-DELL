@@ -60,7 +60,10 @@ jobs:
         run: pipx install yamllint
 
       - name: Lint manifests
-        run: yamllint -d "{extends: default, rules: {line-length: {max: 220}}}" k8s
+        run: |
+          yamllint \
+            -d '{extends: default, rules: {line-length: {max: 220}}}' \
+            k8s
 
       - name: Validate key files are non-empty
         run: |
