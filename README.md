@@ -1,6 +1,6 @@
 # Kitchen App
 
-Production-ready student project for a cloud-native Kitchen Orders app.
+Cloud-native Kitchen Orders app.
 
 ## Stack
 - API: Node.js + Express + MongoDB + Prometheus metrics
